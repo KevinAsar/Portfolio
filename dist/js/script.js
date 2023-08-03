@@ -48,8 +48,8 @@ darkToggle.addEventListener("click", function () {
 
 // pindahkan posisi toggle sesuai mode
 
-if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-  darkToggle.checked = true;
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme:)').matches)) {
+  darkToggle.checked = false;
 } else {
   darkToggle.checked = false;
 }
